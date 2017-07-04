@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>MUFFIN PARTY</title>
+    <style>
+      body {
+        margin: 0px;
+      }
+      div.container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        z-index: 1;
+
+        animation: anim 0.9375s infinite;
+      }
+      img {
+        width: 20vw;
+        z-index: 3;
+        animation: size 0.9375s infinite;
+        min-width: 100px;
+      }
+      @keyframes anim {
+        0% {background: #ec41a4;}
+        49% {background: #60344b;}
+        50% {background: #ec41a4;}
+        100% {background: #60344b;}
+      }
+      @keyframes size {
+        0% {width: 20vw;}
+        49% {width: 30vw;}
+        50% {width: 20vw;}
+        100% {width: 30vw;}
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="https://avatars3.githubusercontent.com/u/29896580?v=3&s=400">
+    </div>
+    <audio autoplay="true" src="https://github.com/muffinparty/muffinparty.github.io/raw/master/party.mp3"></audio>
+  </body>
+</html>
